@@ -36,7 +36,7 @@ class TaskRemoteDataSourceImpl implements TaskRemoteDataSource {
           .map((doc) => TaskModel.fromJson(doc.data()))
           .toList();
     } catch (e) {
-      print('Error fetching tasks: $e');
+      print('Error fetching task: $e');
       return [];
     }
   }
